@@ -86,7 +86,7 @@ pipeline {
                     // Ensure target directory exists before copying
                     sh 'ls -l target'
                     // Deploy the WAR file to Tomcat
-                    sh 'sudo cp target/NETFLIX-1.2.2.war /root/apache-tomcat-9.0.93/webapps'
+                    sh 'sudo cp target/NETFLIX-1.2.2.war /home/ec2-user/apache-tomcat-10.1.31/webapps'
                 }
             }
         }
